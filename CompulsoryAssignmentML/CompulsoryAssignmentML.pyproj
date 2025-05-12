@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>dbcf05ca-07e4-44f5-bf51-ce3ffa26dfec</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>agents\CompulsoryAssignmentML.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,8 +25,11 @@
     <Compile Include="config\config.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="critic.py" />
     <Compile Include="main.py" />
-    <Compile Include="tools\search_papers.py" />
+    <Compile Include="prompts.py" />
+    <Compile Include="react_agent.py" />
+    <Compile Include="tools.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -34,7 +37,6 @@
   <ItemGroup>
     <Folder Include="agents\" />
     <Folder Include="config\" />
-    <Folder Include="tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -1,3 +1,5 @@
+import requests
+
 def search_papers(topic: str, year_filter: str, citation_filter: str):
     url = "https://api.semanticscholar.org/graph/v1/paper/search"
     params = {
